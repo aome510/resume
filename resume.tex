@@ -9,6 +9,7 @@
 
 \usepackage{fontawesome5}
 
+\usepackage{amssymb}
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
 \usepackage{titlesec}
@@ -54,19 +55,19 @@
 
 \newcommand{\resumeItem}[2]{
   \item\small{
-    \textbf{#1}{: #2}
+    \textbf{#1}{: #2 \vspace{-2pt}}
   }
 }
 
-\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}}
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2} \vspace{-3pt}}
 
-\newcommand{\resumeDescItem}[1]{\item\small{#1}}
+\newcommand{\resumeDescItem}[1]{\item[-]\small{#1} \vspace{-2pt}}
 
 \newcommand{\resumeHeading}[4]{
     \begin{tabular*}{0.99\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
       \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}
+    \end{tabular*}\vspace{-5pt}
 }
 
 \newcommand{\resumeSubheading}[4]{
@@ -74,7 +75,7 @@
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
       \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}
+    \end{tabular*}\vspace{-5pt}
 }
 
 \newcommand{\resumeListStart}{\begin{itemize}[leftmargin=*]}
@@ -99,23 +100,22 @@
 
 %-----------EDUCATION-----------------
 \section{Education}
-    \resumeHeading
-      {University of Waterloo}{Waterloo, ON, Canada}
-      {Candidate for Honours Bachelor in Computer Science, Co-op}{Sep 2019 - present}
+  \resumeHeading
+  {University of Waterloo}{Waterloo, ON, Canada}
+  {Candidate for Honours Bachelor in Computer Science, Co-op}{Sep 2019 - present}
   \resumeListStart
-      \resumeSubItem{Cumulative GPA}{92/100 (currently 3A)}
-      \resumeSubItem{Michael and Ophelia Lazaridis Olympiad Scholarship}{
-        \resumeListStart
+    \resumeSubItem{Cumulative GPA}{92/100 (currently 3A)}
+    \resumeSubItem{Michael and Ophelia Lazaridis Olympiad Scholarship}{
+      \resumeListStart\vspace{-5pt}
         \resumeDescItem{Full-ride scholarship covers all academic terms.}
         \resumeDescItem{One of four recipients of 2019.}
-        \resumeListEnd
-      }
+      \resumeListEnd
+    }
   \resumeListEnd
 
 %-----------EXPERIENCE-----------------
 \section{Experience}
   \resumeListStart
-
     \resumeSubheading
       {Curvegrid}{Tokyo, Japan}
       {Blockchain Software Engineer}{Summer 2020, 2021}
@@ -123,7 +123,7 @@
         \resumeItem{MultiBaas}
           {\resumeListStart
              \resumeDescItem{MultiBaas is a middleware platform that allows users to build blockchain applications with REST APIs and a user-friendly web UI.}
-             \resumeDescItem{Maintained and developed features for the application's back-end server in \textbf{Golang} and front-end web app in \textbf{Vue.js}.}
+             \resumeDescItem{Maintained and developed the application's back-end server in \textbf{Golang} and front-end web app in \textbf{Vue.js}.}
            \resumeListEnd}
         \resumeItem{MultiBaas Bridge}
         {\resumeListStart
@@ -147,21 +147,21 @@
 
 % --------SKILLS------------
 \section{Skills}
- \resumeListStart
-   \resumeItem{Languages}{Rust, Golang, C/C++, Python, Scala, Typescript/Javascript, SQL}
-   \resumeItem{Technologies}{Vue.js, Node.js, PostgreSQL, Tensorflow, PyTorch}
- \resumeListEnd
+  \resumeListStart
+    \resumeSubItem{Languages}{Rust, Golang, C/C++, Python, Scala, Typescript/Javascript, SQL}
+    \resumeSubItem{Technologies}{Vue.js, Node.js, PostgreSQL, Tensorflow, PyTorch}
+  \resumeListEnd
 
 
 %-----------PROJECTS-----------------
 \section{Projects}
   \resumeListStart
     \resumeSubItem{Hacker News TUI}
-      {A fast and fully customizable application written in \textbf{Rust} for browsing Hacker News in terminal.}
+      {A fast and customizable application written in \textbf{Rust} for browsing Hacker News in terminal.}
     \resumeSubItem{Article Markdown CLI}
-      {A CLI application written in \textbf{Typescript} that converts a web page content into reader mode under markdown format.}
+      {A CLI application written in \textbf{Typescript} that converts a web page content into reader mode under the markdown format.}
     \resumeSubItem{Anime Music Generator}
-      {A web application built with \textbf{Python} (\textbf{Django}) and \textbf{Javascript} that generates classical anime songs using recurrent neural network.}
+      {A web application built with \textbf{Python} (\textbf{Django}) and \textbf{Javascript} that generates classical anime songs using recurrent neural networks.}
   \resumeListEnd
 
 %-----------Awards-----------------
