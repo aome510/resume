@@ -6,9 +6,7 @@
 % repo in "https://github.com/sb2nov/resume"
 
 \documentclass[letterpaper,11pt]{article}
-
 \usepackage{fontawesome5}
-
 \usepackage{amssymb}
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
@@ -35,7 +33,6 @@
 \addtolength{\textwidth}{1.0in}
 \addtolength{\topmargin}{-.5in}
 \addtolength{\textheight}{1.0in}
-
 \urlstyle{same}
 
 \raggedbottom
@@ -44,8 +41,8 @@
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large
-}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+  \vspace{-7pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt} ]
 
 % Ensure that generate pdf is machine readable/ATS parsable
 \pdfgentounicode=1
@@ -53,15 +50,16 @@
 %-------------------------
 % Custom commands
 
+\newcommand{\linkDesc}[1]{\underline{\texttt{#1}}}
+
 \newcommand{\resumeItem}[2]{
-  \item\small{
-    \textbf{#1}{: #2 \vspace{-2pt}}
-  }
+  \item\small{#1{: #2}} \vspace{-2pt}
 }
 
-\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2} \vspace{-3pt}}
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2} \vspace{-2pt}}
 
 \newcommand{\resumeDescItem}[1]{\item[-]\small{#1} \vspace{-2pt}}
+\newcommand{\resumeDescItemNoBullet}[1]{\item[]\small{#1} \vspace{-2pt}}
 
 \newcommand{\resumeHeading}[4]{
     \begin{tabular*}{0.99\textwidth}[t]{l@{\extracolsep{\fill}}r}
@@ -86,29 +84,28 @@
 %-------------------------------------------
 %%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-
 \begin{document}
 
 %----------HEADING-----------------
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
   \LARGE\textbf{Thang Pham}
-  & \href{mailto:phamducthang1234@gmail.com}{\faIcon{envelope} phamducthang1234@gmail.com}\\
+  & \faIcon{mobile-alt} (+1) 226-507-5123\\
   \href{https://github.com/aome510}{\faIcon{github} aome510}
   \href{https://www.linkedin.com/in/aome510/}{\faIcon{linkedin} aome510}
-  & \faIcon{mobile-alt} (+1) 226-507-5123
+  & \href{mailto:phamducthang1234@gmail.com}{\faIcon{envelope} phamducthang1234@gmail.com}
 \end{tabular*}
 
 %-----------EDUCATION-----------------
 \section{Education}
   \resumeHeading
-  {University of Waterloo}{Waterloo, ON, Canada}
-  {Candidate for Honours Bachelor in Computer Science, Co-op}{Sep 2019 - present}
+  {University of Waterloo}{Waterloo, Canada}
+  {Candidate for Honours Bachelor in Computer Science, Co-op}{Sep 2019 - May 2023 (expected)}
   \resumeListStart
-    \resumeSubItem{Cumulative GPA}{92/100 (currently 3A)}
+    \resumeSubItem{Cumulative GPA}{92/100.}
     \resumeSubItem{Michael and Ophelia Lazaridis Olympiad Scholarship}{
-      \resumeListStart\vspace{-5pt}
-        \resumeDescItem{Full-ride scholarship covers all academic terms.}
-        \resumeDescItem{One of four recipients of 2019.}
+      \resumeListStart
+      \vspace{-5pt}
+        \resumeDescItem{One of four recipients of 2019 to receive Faculty of Mathematics's Olympiad Scholarship that covers full tuition and living expenses for all academic terms.}
       \resumeListEnd
     }
   \resumeListEnd
@@ -122,54 +119,63 @@
       \resumeListStart
         \resumeItem{MultiBaas}
           {\resumeListStart
-             \resumeDescItem{MultiBaas is a middleware platform that allows users to build blockchain applications with REST APIs and a user-friendly web UI.}
-             \resumeDescItem{Maintained and developed the application's back-end server in \textbf{Golang} and front-end web app in \textbf{Vue.js}.}
-           \resumeListEnd}
+          \resumeDescItem{Maintained \textbf{Golang} back-end server that interacts with smart contracts and queries contract events in the blockchain using REST API.}
+          \resumeDescItem{Built event and address tables as \textbf{Vue.js} components for managing blockchain data with an intuitive web-based control panel.}
+          \resumeListEnd}
         \resumeItem{MultiBaas Bridge}
         {\resumeListStart
-           \resumeDescItem{MultiBaas Bridge is a cross-chain portal that facilitates movement of digital assets between blockchain platforms.}
-           \resumeDescItem{Designed and built the project's initial structure in \textbf{Golang}.}
-           \resumeDescItem{Implemented back-end supports for cross-chain movements of ERC20 and ERC721 tokens.}
+           \resumeDescItem{Designed and developed a reference implementation of \textbf{MultiBaas Bridge}, a cross-chain portal that allows fast and secure movement of digital assets across different blockchain platforms.}
+           \resumeDescItem{Implemented \textbf{ChainBridge} smart contract integration for operating cross-chain movement of ERC20 and ERC721 tokens using a voting system with off-chain relayers.}
          \resumeListEnd}
       \resumeListEnd
 
     \resumeSubheading
       {VinAI Research}{Hanoi, Vietnam}
-      {Machine Learning Engineer}{May - Sep 2019}
+      {ML Engineer Intern}{May - Sep 2019}
       \resumeListStart
         \resumeItem{Mask Classifier}
           {\resumeListStart
-             \resumeDescItem{Developed a deep learning project for quantifying the percentage of people wearing masks on the street in real-time using \textbf{Tensorflow} and \textbf{OpenCV}.}
-             \resumeDescItem{Collected and annotated a dataset of ten thousand face images.}
+             \resumeDescItem{Developed a deep learning project for quantifying the percentage of people wearing masks on the street in real-time.}
+             \resumeDescItem{Trained a \textbf{Resnet50}-based model built on top of the \href{https://github.com/mahyarnajibi/SSH}{\linkDesc{SSH model}} for face detection and masked face classification.}
+             \resumeDescItem{The final model achieved \textbf{96.5\%} accuracy during inference and an average real-time performance of \textbf{10-15 FPS}.}
+             \resumeDescItem{Source code: \href{https://github.com/aome510/Mask-Classifier}{\linkDesc{https://github.com/aome510/Mask-Classifier}}.}
            \resumeListEnd}
       \resumeListEnd
-  \resumeListEnd
-
-% --------SKILLS------------
-\section{Skills}
-  \resumeListStart
-    \resumeSubItem{Languages}{Rust, Golang, C/C++, Python, Scala, Typescript/Javascript, SQL}
-    \resumeSubItem{Technologies}{Vue.js, React.js, Node.js, PostgreSQL, Tensorflow, PyTorch}
-  \resumeListEnd
-
-
-%-----------PROJECTS-----------------
-\section{Projects}
-  \resumeListStart
-    \resumeSubItem{Hacker News TUI}
-      {A fast and customizable application written in \textbf{Rust} for browsing Hacker News on terminal}
-    \resumeSubItem{Article MD CLI}
-      {A CLI tool written in \textbf{Typescript} that converts a web page content into readable markdown text}
-    \resumeSubItem{Anime Music Generator}
-      {A web app built with \textbf{Django} and \textbf{Javascript} that generates classical anime songs using recurrent neural networks}
   \resumeListEnd
 
 %-----------Awards-----------------
 \section{Awards}
   \resumeListStart
-    \resumeSubheading{ICPC East Central North America Regional Contest}{Windsor, Canada}{Gold Medalist - \href{https://ecna19.kattis.com/standings}{Ranked 2/105}}{ Oct 2019}
-    \resumeSubheading{International Olympiad in Informatics}{Tsukuba, Japan}{Gold Medalist - \href{https://stats.ioinformatics.org/results/2018}{Ranked 10/336}}{Sep 2018}
-    \resumeSubheading{Asia-Pacific Olympiad in Informatics}{Hanoi, Vietnam}{Gold Medalist - \href{http://apio-olympiad.org/2018/results.html}{Ranked 12/187}}{May 2018}
+    \resumeSubheading{ICPC East Central North America Regional Contest}{Windsor, Canada}{Gold Medalist - \href{https://ecna19.kattis.com/standings}{\linkDesc{Ranked 2/105}}}{ Oct 2019}
+    \resumeSubheading{International Olympiad in Informatics}{Tsukuba, Japan}{Gold Medalist - \href{http://stats.ioinformatics.org/people/6729}{\linkDesc{Ranked 10/336}}}{Sep 2018}
+    \resumeSubheading{Asia-Pacific Olympiad in Informatics}{Hanoi, Vietnam}{Gold Medalist - \href{http://apio-olympiad.org/2018/results.html}{\linkDesc{Ranked 12/187}}}{May 2018}
+  \resumeListEnd
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeListStart
+    \resumeItem{Hacker News TUI}
+    {\vspace{-5pt}
+      \resumeListStart
+      \resumeDescItem{A fast and customizable Hacker News client written in \textbf{Rust} for reading news on terminal.}
+      \resumeDescItem{Hit the \href{https://news.ycombinator.com/item?id=26929588}{\linkDesc{front-page}} of Hacker News during the first official release.}
+      \resumeDescItem{Source code: \href{https://github.com/aome510/hackernews-TUI}{\linkDesc{https://github.com/aome510/hackernews-TUI}}.}
+    \resumeListEnd}
+    \vspace{-5pt}
+    \resumeItem{Anime Music Generator}
+    {\vspace{-5pt}
+      \resumeListStart
+      \resumeDescItem{A \textbf{Django}/\textbf{Javascript} web app  that generates classical anime songs using recurrent neural networks.}
+      \resumeDescItem{Source code: \href{https://github.com/aome510/Generating-Anime-Music}{\linkDesc{https://github.com/aome510/Generating-Anime-Music}}.}
+    \resumeListEnd}
+    \vspace{-5pt}
+  \resumeListEnd
+
+% --------SKILLS------------
+\section{Skills}
+  \resumeListStart
+    \resumeSubItem{Languages}{Rust, Golang, Typescript/Javascript, C/C++, Python, Scala, SQL}
+    \resumeSubItem{Technologies}{Vue.js, Node.js, React.js, PostgreSQL, Tensorflow, PyTorch}
   \resumeListEnd
 
 %-------------------------------------------
