@@ -65,7 +65,7 @@
     \begin{tabular*}{0.99\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
       \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-5pt}
+    \end{tabular*}\vspace{-7pt}
 }
 
 \newcommand{\resumeSubheading}[4]{
@@ -73,10 +73,10 @@
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
       \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-5pt}
+    \end{tabular*}\vspace{-7pt}
 }
 
-\newcommand{\resumeListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeListStart}{\vspace{-2pt}\begin{itemize}[leftmargin=*]}
 \newcommand{\resumeListEnd}{\end{itemize}}
 
 \renewcommand{\labelitemii}{$\circ$}
@@ -119,7 +119,7 @@
       \resumeListStart
         \resumeItem{MultiBaas}
           {\resumeListStart
-          \resumeDescItem{Maintained back-end server written in \textbf{Go} that interacts with smart contracts and queries contract events in the blockchain using REST API.}
+          \resumeDescItem{Maintained a \textbf{Go} back-end server that interacts with smart contracts and queries contract events in the blockchain using REST API.}
           \resumeDescItem{Built event and address tables as \textbf{Vue.js} components for managing blockchain data with an intuitive web-based control panel.}
           \resumeListEnd}
         \resumeItem{MultiBaas Bridge}
@@ -160,6 +160,13 @@
       \resumeDescItem{A fast and customizable Hacker News client written in \textbf{Rust} for reading news on the terminal.}
       \resumeDescItem{Hit the \href{https://news.ycombinator.com/item?id=26929588}{\linkDesc{front-page}} of Hacker News during the first official release.}
       \resumeDescItem{Source code: \href{https://github.com/aome510/hackernews-TUI}{\linkDesc{https://github.com/aome510/hackernews-TUI}}.}
+    \resumeListEnd}
+    \vspace{-5pt}
+    \resumeItem{Spotify Player}
+    {\vspace{-5pt}
+      \resumeListStart
+      \resumeDescItem{An easy-to-use and configurable player written in \textbf{Rust} for controlling Spotify with commands.}
+      \resumeDescItem{Source code: \href{https://github.com/aome510/spotify-player}{\linkDesc{https://github.com/aome510/spotify-player}}.}
     \resumeListEnd}
     \vspace{-5pt}
     \resumeItem{Anime Music Generator}
