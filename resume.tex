@@ -2,8 +2,9 @@
 % Author : Thang Pham
 %------------------------
 
-% Acknowledge: the below resume is based on sb2nov's resume
-% repo in "https://github.com/sb2nov/resume"
+% Acknowledgement: The below resume is based on sb2nov's resume [1]
+%
+% [1]: https://github.com/sb2nov/resume
 
 \documentclass[letterpaper,11pt]{article}
 \usepackage{fontawesome5}
@@ -99,7 +100,7 @@
 \section{Education}
   \resumeHeading
   {University of Waterloo}{Waterloo, Canada}
-  {Candidate for Honours Bachelor in Computer Science, Co-op}{Sep 2019 - May 2023 (expected)}
+  {Candidate for Honours Bachelor in Computer Science, Co-op}{Sep 2019 - Sep 2023 (expected)}
   \resumeListStart
     \resumeSubItem{Cumulative GPA}{92\%.}
     \resumeSubItem{Michael and Ophelia Lazaridis Olympiad Scholarship}{
@@ -114,29 +115,41 @@
 \section{Experience}
   \resumeListStart
     \resumeSubheading
-      {Curvegrid}{Tokyo, Japan}
-      {Blockchain Software Engineer}{May 2021 - Sep 2021}
+      {Neon, Inc.}{Waterloo, Canada}
+      {Software Engineer Intern}{May 2022 - Aug 2021}
       \resumeListStart
-        \resumeDescItem{Designed and developed a reference implementation of MultiBaas Bridge, a cross-chain portal that allows fast and secure movement of digital assets across different blockchain platforms.}
-        \resumeDescItem{Added smart contract integrations to allow MultiBaas Bridge server to operate the cross-chain movement of ERC20 and ERC721 tokens using a multisig contract.}
-        \resumeDescItem{Worked on migrating the company's front-end stack from Vuetify 1 with Javascript to Vuetify 2 with Typescript and upgrading the back-end API system to version 1.0.}
+        \resumeDescItem{Building an open-source serverless PostgreSQL.}
+        \resumeDescItem{Worked on maintaining and improving Neon storage engine.}
+      \resumeListEnd
+
+    \resumeSubheading
+      {Waabi}{Toronto, Canada}
+      {Software Engineer Intern}{Jan 2022 - Apr 2021}
+      \resumeListStart
+        \resumeDescItem{Built a proof of concept framework for implementing and integrating different vehicle controllers and vehicle models to the autonomy system of self-driving trucks.}
       \resumeListEnd
 
     \resumeSubheading
       {Curvegrid}{Tokyo, Japan}
-      {Blockchain Software Engineer}{May 2020 - Sep 2020}
+      {Software Engineer Intern}{May 2021 - Aug 2021}
       \resumeListStart
-        \resumeDescItem{Maintained a Golang back-end server that interacts with the blockchain via REST APIs.}
-        \resumeDescItem{Implemented new event and address tables using Vue.js to manage blockchain data with a web-based control panel.}
+        \resumeDescItem{Developed a prototype of MultiBaas Bridge, a cross-chain portal that allows fast and secure movement of digital assets across different blockchain platforms.}
+        \resumeDescItem{Worked on migrating the company's front-end stack and upgrading the API system to a new version.}
+      \resumeListEnd
+
+    \resumeSubheading
+      {Curvegrid}{Tokyo, Japan}
+      {Software Engineer Intern}{May 2020 - Aug 2020}
+      \resumeListStart
+        \resumeDescItem{Maintained the company's code base, developed new features, and fixed bugs.}
+        \resumeDescItem{Rewrote the handling logic for GET events API with pagination, improving the overall performance by 2 times.}
       \resumeListEnd
 
     \resumeSubheading
       {VinAI Research}{Hanoi, Vietnam}
-      {ML Engineer Intern}{May - Sep 2019}
+      {AI Engineer Intern}{May 2019 - Aug 2019}
       \resumeListStart
         \resumeDescItem{Developed a deep learning project for quantifying the percentage of people wearing masks on the street in real-time.}
-        \resumeDescItem{Trained a custom model using the \href{https://github.com/mahyarnajibi/SSH}{\linkDesc{SSH model}} for face detection and a Resnet50 model for masked face classification.}
-        \resumeDescItem{Achieved 96.5\% accuracy during inference and an average real-time performance of 10-15 FPS.}
         \resumeDescItem{Source code: \href{https://github.com/aome510/Mask-Classifier}{\linkDesc{https://github.com/aome510/Mask-Classifier}}.}
       \resumeListEnd
   \resumeListEnd
@@ -152,31 +165,18 @@
 %-----------PROJECTS-----------------
 \section{Projects}
   \resumeListStart
-    \resumeItem{\href{https://github.com/aome510/hackernews-TUI}{\linkDesc{Hacker News TUI}}}
-    {\vspace{-5pt}
-      \resumeListStart
-      \resumeDescItem{Used Rust to build a fast and configurable terminal application for reading Hacker News articles and discussions.}
-      \resumeDescItem{Hit the \href{https://news.ycombinator.com/item?id=26929588}{\linkDesc{front-page}} of Hacker News during the first official release.}
-    \resumeListEnd}
+    \resumeItem{\href{https://github.com/aome510/hackernews-TUI}{\linkDesc{Hacker News TUI}}}{a fast and customizable application for browsing Hacker News on the terminal.}
     \vspace{-5pt}
-    \resumeItem{\href{https://github.com/aome510/spotify-player}{\linkDesc{Spotify Player}}}
-    {\vspace{-5pt}
-      \resumeListStart
-      \resumeDescItem{Developed a command driven player in Rust to control Spotify and listen to music on the terminal.}
-    \resumeListEnd}
+    \resumeItem{\href{https://github.com/aome510/spotify-player}{\linkDesc{Spotify Player}}}{a Spotify client to listen to music and interact with the Spotify server directly from the terminal.}
     \vspace{-5pt}
-    \resumeItem{\href{https://github.com/aome510/Generating-Anime-Music}{\linkDesc{Anime Music Generator}}}
-    {\vspace{-5pt}
-      \resumeListStart
-      \resumeDescItem{Used Tensorflow to train a bidirectional recurrent neural network that generates classical anime songs and deployed it to Heruko as a simple Django web app.}
-    \resumeListEnd}
+    \resumeItem{\href{https://github.com/aome510/Generating-Anime-Music}{\linkDesc{Anime Music Generator}}}{a web application that generates anime songs using a simple recurrent neural network.}
     \vspace{-5pt}
   \resumeListEnd
 
 % --------SKILLS------------
 \section{Skills}
   \resumeListStart
-    \resumeSubItem{Languages}{Rust, Golang, Typescript/Javascript, C/C++, Python, Scala, SQL}
+    \resumeSubItem{Languages}{Rust, Golang, Typescript/Javascript, C/C++, Python}
     \resumeSubItem{Technologies}{Vue.js, Node.js, Pytorch, Tensorflow}
     \resumeSubItem{Tools}{Unix/Linux, Git, PostgreSQL, Docker, Github actions}
   \resumeListEnd
