@@ -42,7 +42,7 @@
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-7pt}\scshape\raggedright\large
+	\vspace{-7pt}\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt} ]
 
 % Ensure that generate pdf is machine readable/ATS parsable
@@ -54,7 +54,7 @@
 \newcommand{\linkDesc}[1]{\underline{\texttt{#1}}}
 
 \newcommand{\resumeItem}[2]{
-  \item\small{#1{: #2}} \vspace{-2pt}
+	\item\small{#1{: #2}} \vspace{-2pt}
 }
 
 \newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2} \vspace{-2pt}}
@@ -63,22 +63,22 @@
 \newcommand{\resumeDescItemNoBullet}[1]{\item[]\small{#1} \vspace{-2pt}}
 
 \newcommand{\resumeHeading}[4]{
-    \begin{tabular*}{0.99\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & #2 \\
-      \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-7pt}
+	\begin{tabular*}{0.99\textwidth}[t]{l@{\extracolsep{\fill}}r}
+		\textbf{#1} & #2 \\
+		\textit{\small#3} & \textit{\small #4} \\
+	\end{tabular*}\vspace{-7pt}
 }
 
 \newcommand{\resumeSubheading}[4]{
-  \item
-    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & #2 \\
-      \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-7pt}
+	\item
+	\begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+		\textbf{#1} & #2 \\
+		\textit{\small#3} & \textit{\small #4} \\
+	\end{tabular*}\vspace{-7pt}
 }
 
 \newcommand{\resumeListStart}{\vspace{-2pt}\begin{itemize}[leftmargin=*]}
-\newcommand{\resumeListEnd}{\end{itemize}}
+		\newcommand{\resumeListEnd}{\end{itemize}}
 
 \renewcommand{\labelitemii}{$\circ$}
 
@@ -89,92 +89,94 @@
 
 %----------HEADING-----------------
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  \LARGE\textbf{Thang Pham}
-  & \faIcon{mobile-alt} (+1) 226-507-5123\\
-  \href{https://github.com/aome510}{\faIcon{github} aome510}
-  \href{https://www.linkedin.com/in/aome510/}{\faIcon{linkedin} aome510}
-  & \href{mailto:phamducthang1234@gmail.com}{\faIcon{envelope} phamducthang1234@gmail.com}
+	\LARGE\textbf{Thang Pham}
+	& \faIcon{mobile-alt} (+1) 226-507-5123\\
+	\href{https://github.com/aome510}{\faIcon{github} aome510}
+	\href{https://www.linkedin.com/in/aome510/}{\faIcon{linkedin} aome510}
+	& \href{mailto:phamducthang1234@gmail.com}{\faIcon{envelope} phamducthang1234@gmail.com}
 \end{tabular*}
 
 %-----------EDUCATION-----------------
 \section{Education}
-  \resumeHeading
-  {University of Waterloo}{Waterloo, Canada}
-  {Bachelor of Computer Science (Dean's Honours)}{Sep 2019 - May 2023}
-  \resumeListStart
-    \resumeDescItem{Michael and Ophelia Lazaridis Olympiad Scholarship (full-ride).}
-  \resumeListEnd
+\resumeHeading
+{University of Waterloo}{Waterloo, Canada}
+{Bachelor of Computer Science (Dean's Honours)}{Sep 19 - May 23}
+\resumeListStart
+\resumeDescItem{Cumulative GPA: 90/100, Major Average: 92/100.}
+\resumeDescItem{Michael and Ophelia Lazaridis Olympiad Scholarship (full-ride).}
+\resumeListEnd
 
 %-----------EXPERIENCE-----------------
 \section{Experience}
-  \resumeListStart
-    \resumeSubheading
-      {Waabi Innovation}{Toronto, Canada}
-      {Software Engineer I}{Jun 2023 - now}
-      \resumeListStart
-        \resumeDescItem{Write software and tools for onboard system running on autonomous trucks.}
-      \resumeListEnd
-  
-    \resumeSubheading
-      {Neon}{San Francisco, United States}
-      {Software Engineer Intern}{May 2022 - Aug 2022}
-      \resumeListStart
-      \resumeDescItem{Added new APIs for reporting different kinds of database metadata and metrics.}
-      \resumeDescItem{Improved reliability and performance of the storage engine's logs processing unit and branch creation unit.}
-      \resumeListEnd
+\resumeListStart
+\resumeSubheading
+{Waabi Innovation}{Toronto, Canada}
+{Software Engineer I}{Jun 23 - now}
+\resumeListStart
+\resumeDescItem{Writing software and tools for onboard system running on self-driving trucks.}
+\resumeListEnd
 
-    \resumeSubheading
-      {Waabi Innovation}{Toronto, Canada}
-      {Software Engineer Intern}{Jan 2022 - Apr 2022}
-      \resumeListStart
-        \resumeDescItem{Implemented a proof of concept framework for testing and integrating different vehicle controllers and vehicle models into the autonomy system of self-driving trucks.}
-      \resumeListEnd
+\resumeSubheading
+{Neon}{San Francisco, United States}
+{Software Engineer Intern}{May 22 - Aug 22}
+\resumeListStart
+\resumeDescItem{Added new API endpoints for reporting database metadata and observing metrics.}
+\resumeDescItem{Improved reliability and performance of the storage engine's log processing unit and branch creation unit by 2x.}
+\resumeListEnd
 
-    \resumeSubheading
-      {Curvegrid}{Tokyo, Japan}
-      {Software Engineer Intern}{May 2020 - Aug 2021}
-      \resumeListStart
-        \resumeDescItem{Maintained and added new features for the back-end API system of MultiBaas, a blockchain middleware.}
-        \resumeDescItem{Wrote a prototype of MultiBaas Bridge, a cross-chain portal that allows fast and secure movement of digital assets across different blockchain platforms.}
-        \resumeDescItem{Introduced Typescript to the company's front-end stack and helped stabilize the blockchain APIs for the first release.}
-      \resumeListEnd
+\resumeSubheading
+{Waabi Innovation}{Toronto, Canada}
+{Software Engineer Intern}{Jan 22 - Apr 22}
+\resumeListStart
+\resumeDescItem{Implemented a proof of concept framework for testing and integrating different vehicle controllers and vehicle models into the autonomy system of self-driving trucks.}
+\resumeListEnd
 
-    \resumeSubheading
-      {VinAI Research}{Hanoi, Vietnam}
-      {AI Engineer Intern}{May 2019 - Aug 2019}
-      \resumeListStart
-        \resumeDescItem{Developed a deep learning project for quantifying the percentage of people wearing masks on the street in real-time.}
-      \resumeListEnd
-  \resumeListEnd
+\resumeSubheading
+{Curvegrid}{Tokyo, Japan}
+{Software Engineer Intern}{May 20  - Aug 21}
+\resumeListStart
+\resumeDescItem{Maintained and added new features for the back-end API system of MultiBaas, a blockchain middleware.}
+\resumeDescItem{Wrote a prototype of MultiBaas Bridge, a cross-chain portal that allows fast and secure movement of digital assets across different blockchain platforms.}
+\resumeDescItem{Introduced Typescript to the company's front-end stack and helped stabilize APIs for the first release.}
+\resumeListEnd
 
-%-----------Awards-----------------
-\section{Awards}
-  \resumeListStart
-    \resumeSubheading{ICPC East Central North America Regional Contest}{Windsor, Canada}{Gold Medalist - \href{https://ecna19.kattis.com/standings}{\linkDesc{Ranked 2/105}}}{ Oct 2019}
-    \resumeSubheading{International Olympiad in Informatics}{Tsukuba, Japan}{Gold Medalist - \href{http://stats.ioinformatics.org/people/6729}{\linkDesc{Ranked 10/336}}}{Sep 2018}
-    \resumeSubheading{Asia-Pacific Olympiad in Informatics}{Hanoi, Vietnam}{Gold Medalist - \href{http://apio-olympiad.org/2018/results.html}{\linkDesc{Ranked 12/187}}}{May 2018}
-    \resumeSubheading{Vietnam National Olympiad in Informatics}{Hanoi, Vietnam}{First Prize - First place}{Jan 2018}
-  \resumeListEnd
+\resumeSubheading
+{VinAI Research}{Hanoi, Vietnam}
+{AI Engineer Intern}{May 19 - Aug 19}
+\resumeListStart
+\resumeDescItem{Developed a deep learning project for quantifying the percentage of people wearing masks on the street in real-time.}
+\resumeListEnd
+\resumeListEnd
 
 %-----------PROJECTS-----------------
 \section{Projects}
-  \resumeListStart
-    \resumeItem{\href{https://github.com/aome510/hackernews-TUI}{\linkDesc{hackernews-TUI}}}{a terminal application for browsing Hacker News and reading discussions/articles.}
-    \vspace{-5pt}
-    \resumeItem{\href{https://github.com/aome510/spotify-player}{\linkDesc{spotify-player}}}{a Spotify client to play music, control remote playback, browse and explore new music from terminal.}
-    \vspace{-5pt}
-    \resumeItem{\href{https://github.com/aome510/chrome-dino-game-rl}{\linkDesc{chrome-dino-game-rl}}}{a reinforcement learning model that learns to play the Chrome's Dinosaur Game.}
-    \vspace{-5pt}
-    \resumeItem{\href{https://github.com/aome510/Generating-Anime-Music}{\linkDesc{Anime Music Generator}}}{a web application that generates short anime-inspired songs using simple neural networks.}
-    \vspace{-5pt}
-  \resumeListEnd
+\resumeListStart
+\resumeItem{\href{https://github.com/aome510/hackernews-TUI}{\linkDesc{hackernews-TUI}}}{a terminal application for browsing Hacker News and reading discussions/articles.}
+\vspace{-5pt}
+\resumeItem{\href{https://github.com/aome510/spotify-player}{\linkDesc{spotify-player}}}{a Spotify player in the terminal providing a full feature parity to the official Spotify application.}
+\vspace{-5pt}
+\resumeItem{\href{https://github.com/aome510/chrome-dino-game-rl}{\linkDesc{chrome-dino-game-rl}}}{a deep reinforcement learning model that learns to play the Chrome's Dinosaur Game.}
+\vspace{-5pt}
+\resumeItem{\href{https://github.com/aome510/Generating-Anime-Music}{\linkDesc{Anime Music Generator}}}{a RNN-based machine learning model to generate anime-inspired instrumental songs.}
+\vspace{-5pt}
+\resumeListEnd
+
+%-----------Awards-----------------
+\section{Awards}
+\resumeListStart
+\resumeSubheading{ICPC East Central North America Regional Contest}{Windsor, Canada}{Gold Medalist - \href{https://ecna19.kattis.com/standings}{\linkDesc{Ranked 2/105}}}{ Oct 19}
+\resumeSubheading{International Olympiad in Informatics}{Tsukuba, Japan}{Gold Medalist - \href{http://stats.ioinformatics.org/people/6729}{\linkDesc{Ranked 10/336}}}{Sep 18}
+\resumeSubheading{Asia-Pacific Olympiad in Informatics}{Hanoi, Vietnam}{Gold Medalist - \href{http://apio-olympiad.org/2018/results.html}{\linkDesc{Ranked 12/187}}}{May 18}
+\resumeSubheading{Vietnam National Olympiad in Informatics}{Hanoi, Vietnam}{First Prize - First place}{Jan 18}
+\resumeListEnd
+
 
 % --------SKILLS------------
 \section{Skills}
-  \resumeListStart
-    \resumeSubItem{Languages}{Rust, Golang, Typescript/Javascript, C/C++, Python}
-    \resumeSubItem{Tools}{Unix/Linux, Git, PostgreSQL, Docker, Github actions}
-  \resumeListEnd
+\resumeListStart
+\resumeSubItem{Languages}{Rust, Golang, Typescript/Javascript, C/C++, Python}
+\resumeSubItem{Tools}{Unix/Linux, Git, PostgreSQL, Docker, Github actions}
+\resumeListEnd
 
 %-------------------------------------------
 \end{document}
